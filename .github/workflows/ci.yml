@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-and-reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Tests
+        run: pytest -q
+      - name: Reproduce the project end to end
+        run: python -m src.pipeline
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: reports/
