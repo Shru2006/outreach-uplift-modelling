@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+.env
+
+# Generated data (re-created by the pipeline)
+data/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,98 @@
+{
+  "dataset": {
+    "customers": 80000,
+    "test_customers": 32000,
+    "apply_rate_contacted": 0.1023,
+    "apply_rate_not_contacted": 0.0787,
+    "average_true_uplift": 0.0261
+  },
+  "best_uplift_model": "S-learner",
+  "models": [
+    {
+      "model": "Propensity (rank by P(apply))",
+      "qini_coefficient": 0.3015,
+      "spearman_vs_true_uplift": 0.6165,
+      "observed_uplift_top20": 0.0645,
+      "incremental_per_1000_calls_top5": 22.2,
+      "incremental_per_1000_calls_top10": 40.6,
+      "incremental_per_1000_calls_top20": 67.6,
+      "incremental_per_1000_calls_top30": 64.5,
+      "incremental_per_1000_calls_top50": 49.8
+    },
+    {
+      "model": "S-learner",
+      "qini_coefficient": 0.5512,
+      "spearman_vs_true_uplift": 0.8721,
+      "observed_uplift_top20": 0.1063,
+      "incremental_per_1000_calls_top5": 183.6,
+      "incremental_per_1000_calls_top10": 147.5,
+      "incremental_per_1000_calls_top20": 108.5,
+      "incremental_per_1000_calls_top30": 86.2,
+      "incremental_per_1000_calls_top50": 59.3
+    },
+    {
+      "model": "T-learner",
+      "qini_coefficient": 0.4693,
+      "spearman_vs_true_uplift": 0.7295,
+      "observed_uplift_top20": 0.1016,
+      "incremental_per_1000_calls_top5": 167.0,
+      "incremental_per_1000_calls_top10": 136.5,
+      "incremental_per_1000_calls_top20": 101.6,
+      "incremental_per_1000_calls_top30": 80.5,
+      "incremental_per_1000_calls_top50": 55.3
+    },
+    {
+      "model": "X-learner",
+      "qini_coefficient": 0.4985,
+      "spearman_vs_true_uplift": 0.7858,
+      "observed_uplift_top20": 0.1039,
+      "incremental_per_1000_calls_top5": 173.1,
+      "incremental_per_1000_calls_top10": 141.6,
+      "incremental_per_1000_calls_top20": 104.5,
+      "incremental_per_1000_calls_top30": 82.7,
+      "incremental_per_1000_calls_top50": 56.6
+    },
+    {
+      "model": "Random targeting",
+      "qini_coefficient": 0.0681,
+      "spearman_vs_true_uplift": -0.0054,
+      "observed_uplift_top20": 0.0214,
+      "incremental_per_1000_calls_top5": 25.1,
+      "incremental_per_1000_calls_top10": 25.2,
+      "incremental_per_1000_calls_top20": 25.1,
+      "incremental_per_1000_calls_top30": 25.3,
+      "incremental_per_1000_calls_top50": 26.0
+    },
+    {
+      "model": "Oracle (true uplift)",
+      "qini_coefficient": 0.5845,
+      "spearman_vs_true_uplift": 1.0,
+      "observed_uplift_top20": 0.1174,
+      "incremental_per_1000_calls_top5": 190.9,
+      "incremental_per_1000_calls_top10": 154.3,
+      "incremental_per_1000_calls_top20": 114.8,
+      "incremental_per_1000_calls_top30": 90.0,
+      "incremental_per_1000_calls_top50": 61.2
+    }
+  ],
+  "segment_mix_top20": {
+    "Propensity (rank by P(apply))": {
+      "Persuadable": 0.6284,
+      "Sure thing": 0.1795,
+      "Sleeping dog": 0.1514,
+      "Lost cause": 0.0406
+    },
+    "S-learner": {
+      "Persuadable": 0.9628,
+      "Lost cause": 0.0261,
+      "Sure thing": 0.007,
+      "Sleeping dog": 0.0041
+    }
+  },
+  "segment_mix_population": {
+    "Lost cause": 0.5028,
+    "Persuadable": 0.2978,
+    "Sleeping dog": 0.1634,
+    "Sure thing": 0.0359
+  }
+}

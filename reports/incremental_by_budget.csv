@@ -1,0 +1,31 @@
+model,budget_share,incremental_per_1000_calls
+Propensity (rank by P(apply)),0.05,22.2
+Propensity (rank by P(apply)),0.1,40.6
+Propensity (rank by P(apply)),0.2,67.6
+Propensity (rank by P(apply)),0.3,64.5
+Propensity (rank by P(apply)),0.5,49.8
+S-learner,0.05,183.6
+S-learner,0.1,147.5
+S-learner,0.2,108.5
+S-learner,0.3,86.2
+S-learner,0.5,59.3
+T-learner,0.05,167.0
+T-learner,0.1,136.5
+T-learner,0.2,101.6
+T-learner,0.3,80.5
+T-learner,0.5,55.3
+X-learner,0.05,173.1
+X-learner,0.1,141.6
+X-learner,0.2,104.5
+X-learner,0.3,82.7
+X-learner,0.5,56.6
+Random targeting,0.05,25.1
+Random targeting,0.1,25.2
+Random targeting,0.2,25.1
+Random targeting,0.3,25.3
+Random targeting,0.5,26.0
+Oracle (true uplift),0.05,190.9
+Oracle (true uplift),0.1,154.3
+Oracle (true uplift),0.2,114.8
+Oracle (true uplift),0.3,90.0
+Oracle (true uplift),0.5,61.2
